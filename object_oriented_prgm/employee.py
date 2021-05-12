@@ -24,8 +24,9 @@ for line in f:
     eid,name,desig,exp,salary=line.rstrip("\n").split(",")
     emplist.append(Employee(eid,name,desig,exp,salary))
 
-#for employee in emplist:
-    #print(employee)
+
+for employee in emplist:
+    print(employee)
     #if employee.desig=="developer":
         #print(employee.name)
 

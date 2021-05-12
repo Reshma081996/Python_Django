@@ -1,5 +1,5 @@
-lst=[1,2,3,4]
-lst=lst.sort()
+lst=[1,2,3,5]
+lst.sort()
 low=0
 upp=len(lst)-1
 num=int(input("enter element"))# 3 ; 6 ;7

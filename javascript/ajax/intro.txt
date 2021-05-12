@@ -1,0 +1,18 @@
+javascript ; code excuted line by line
+synchronuys: follows a order
+asynchronous: dont hav any order
+
+
+
+client server communication  methods( get, post, delete,putt, patch)
+sign  in: client request for sign in html page: get methods
+fetching data from server page
+
+
+creditionls koduth and sign in koduth - post-sending data  to servered
+partial updation - (patch)- edit  single  field
+full updation - putt- edit fully
+delete = objtne 
+
+
+data is tranfered from frontend as json data to backened,since json is understnad by both of dem

@@ -49,8 +49,8 @@ lst=[10,11,12,13,14]
 sum=reduce(lambda no1,no2:no1+no2,lst)
 print(sum)
 
-high=max(reduce(lambda no1,no2:no1 if no1>no2 else no2,lst ))
+high=int(reduce(lambda no1,no2:no1 if no1>no2 else no2,lst ))
 print(high)
 
-mini=min(reduce(lambda no1,no2:no1 if no1<no2 else no2,lst ))
+mini=int(reduce(lambda no1,no2:no1 if no1<no2 else no2,lst ))
 print(mini)

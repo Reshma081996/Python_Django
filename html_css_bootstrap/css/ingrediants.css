@@ -1,0 +1,52 @@
+h1{
+    color: salmon;
+    text-align: center;
+}
+
+#chocolate{
+    background-image: url(download.jpg);
+    border-style: solid;
+    border-width: 1px;
+    width: 30%;
+    text-align: center;
+    
+ 
+}
+#coco{
+    color: yellow;
+}
+#fruit{
+    background-image: url(downlo.jpg);
+    border-style: solid;
+    border-width: 1px;
+    width: 30%;
+    text-align: center;
+}
+#smoothie{
+    color: yellowgreen;
+}
+
+#potato{
+    background-image: url(downloa.jpg);
+    border-style: solid;
+    border-width: 1px;
+    width: 30%;
+    text-align: center;
+
+}
+#wiches{
+    background-image: url(down.jpg);
+
+    border-style: solid;
+    border-width: 1px;
+    width: 30%;
+    text-align: center;
+
+}
+
+#sand{
+    color: whitesmoke;
+}
+#chips{
+    color: teal;
+}

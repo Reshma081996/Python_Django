@@ -1,4 +1,4 @@
-# how to define?
+ # how to define?
 #within square brackets-[]
 #lst=[50,"hello",50.5,True,50]
 #indx   0    1      2    3   4

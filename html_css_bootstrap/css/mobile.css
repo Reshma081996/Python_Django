@@ -1,0 +1,58 @@
+body{
+    background-image: url("photo.jpg");
+    
+}
+
+h1{
+    color:blueviolet;
+    text-align: center;
+}
+
+/*div{
+    background-color: chartreuse;
+} ffor all div
+#id given for separate id*/
+
+#nokia{
+    background-color: hotpink;
+    border-style: solid;
+    border-color: indianred;
+    border-width: 1px;
+    width: 30%;
+    text-align: center;
+
+}
+#c3{
+    color:aqua;
+    text-align: center;
+}
+#samsung{
+    background-color: rgb(12, 12, 129);
+    width: 30%;
+    border-style: solid;
+    border-color: maroon;
+    border-width: 1px;
+    text-align: center;
+}
+
+/* class selector is . */
+
+.same{
+    background-color: orangered;
+    border-style: solid;
+    border-width: 1px;
+    width: 30%;
+}
+#minote{
+    text-align: center;
+    color: palegreen;
+}
+#sam{
+    text-align: center;
+    color: seagreen;
+}
+#phone
+{
+    text-align: center;
+    color: rgb(255, 238, 0);
+}

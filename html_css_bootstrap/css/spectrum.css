@@ -1,0 +1,38 @@
+h1{
+    font-family: 'Dancing Script', cursive;
+    
+}
+body{
+    margin: 0%;
+}
+
+div{
+    height: 200px;
+    width: 100px;
+    border-style: solid ;
+    /*float: left; NO MARGIN*/
+    display: inline-block;
+    margin: 0%;
+    margin-top: 10%;/*MOVING DOWN*/
+    /*margin-right: 30%; *MOVING LEFT */
+    /*margin-left: 10%;*/
+
+}
+
+.red{
+    background-color: red;
+    margin-left: 10%;
+}
+.blue{
+    background-color: blue;
+    margin-left:15%;
+}
+
+.green{
+    background-color: green;
+    margin-left: 10%;
+}
+
+.yellow{
+    background-color: yellow;
+}

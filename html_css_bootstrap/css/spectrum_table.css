@@ -1,0 +1,43 @@
+h1{
+    font-family: 'Dancing Script', cursive; 
+}
+
+table{
+    margin: auto;
+/*margin-left: 40px;
+  margin-top: 40px;*/
+}
+
+td{
+    height:100px;
+    width: 190px;
+    padding: 100px;
+    border-color: azure;
+    border-style: solid;
+    border-width: 10px;
+
+    
+    
+}
+
+.red{
+    background-color: red;
+      
+}
+
+.blue{
+    background-color: blue;
+    
+}
+
+.green{
+    background-color:green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orange;
+}

@@ -4,8 +4,8 @@ students=[[10,"ajay","bca",250],
           [13,"dino","mca",220],
           [14,"tom","mca",180],
           [15,"jain","mca",250]]
-#print(students)
-#print(students[1]) #[11, 'vijay', 'bca', 240]
+print(students)
+print(students[1]) #[11, 'vijay', 'bca', 240]
 
 #for stud in students:
     #print(stud[0])

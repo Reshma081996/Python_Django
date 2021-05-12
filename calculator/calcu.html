@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cal.js"></script>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="6"><input type="text" id="result"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="disbox('7')" ></td>
+               
+                <td><input type="button" value="8" onclick="disbox('8')"></td>
+                <td><input type="button" value="9" onclick="disbox('9')"></td>
+                <td><input type="button" value="/" onclick="disbox('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4"onclick="disbox('4')"></td>
+                <td><input type="button" value="5"onclick="disbox('5')"></td>
+                <td><input type="button" value="6"onclick="disbox('6')"></td>
+                <td><input type="button" value="*"onclick="disbox('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="disbox('1')"></td>
+                <td><input type="button" value="2"onclick="disbox('2')"></td>
+                <td><input type="button" value="3"onclick="disbox('3')"></td>
+                <td><input type="button" value="-"onclick="disbox('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="disbox('0')"></td>
+                <td><input type="button" value="=" onclick="print()"></td>
+                <td><input type="button" class="btt" value="+" onclick="disbox('+')"></td>
+                <td><input type="button" value="Clr" onclick="clearall()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="disbox('.')"></td>
+            <td><input type="button" value="DEL" onclick="del()"></td></tr>
+
+        </table>
+    </div>
+</body>
+</html>

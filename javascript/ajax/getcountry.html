@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .image {
+        width: 5%;
+
+    }
+</style>
+
+<body>
+    <div style="background-color:blueviolet;">
+        <label for="">Country</label>
+        <input type="text" class="country">
+        <button onclick="getData()">Getdata</button>
+        <div class="result">
+            <table>
+                <tr>
+                    <td>name</td>
+                    <td>population</td>
+                    <td>currancies</td>
+                    <td>flag</td>
+                </tr>
+                <tbody class="res">
+
+                </tbody>
+            </table>
+        </div>
+</body>
+
+<script>
+    // function getData() {
+
+
+
+    //     var request = new XMLHttpRequest()
+    //     var name = document.querySelector(".country").value;
+    //     request.open("get", `https://restcountries.eu/rest/v2/name/${name}`)
+
+    //     request.send()
+    //     request.onreadystatechange = () => {
+    //         if (request.readyState == 4) {
+    //             if ((request.status > 199) & (request.status < 300)) {
+    //                 var data = JSON.parse(request.responseText)
+    //                 console.log(data)
+    //                 var html_data=""
+
+    //                 data.forEach(element => {
+    //                     html_data+=`<tr><td>${element.name}</td><td>${element.population}</td><td>${element.currencies[0].name}</td><td><img class="image" src="${element.flag}"</img></td></tr>`
+    //                     document.querySelector(".res").innerHTML=html_data
+    //                 });
+    //             }
+
+    //         }
+    //     }
+    // }
+    function populate(data) {
+        var html_data = ""
+
+        data.forEach(element => {
+            html_data += `<tr><td>${element.name}</td><td>${element.population}</td><td>${element.currencies[0].name}</td><td><img class="image" src="${element.flag}"</img></td></tr>`
+            document.querySelector(".res").innerHTML = html_data
+        });
+    }
+
+
+    function getData() {
+        var name = document.querySelector(".country").value;
+        fetch(`https://restcountries.eu/rest/v2/name/${name}222`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`failed ${response.status}`)
+            }
+            return response.json()})
+       
+        .then(data => populate(data))
+        .catch(err => alert(err))//throw chaitha sadanam ntha enn catch display chaiyum
+     }
+
+
+
+
+
+</script>
+
+</html>

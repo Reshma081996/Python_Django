@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <table>
+        <tr>
+            <td>
+                name
+            </td>
+            <td>
+                email
+            </td>
+            <tbody class="part1">
+
+            </tbody>
+        </tr>
+    </table>
+</body>
+<script>
+    // we have  to  create xmlhttp reqst obj
+    var request = new XMLHttpRequest()
+
+    //WE open(method,url)
+    request.open("get", "https://jsonplaceholder.typicode.com/users")
+    //request.open("get","https://jsonplaceholder.typicode.com/todos")
+
+    request.send()
+    request.onreadystatechange = () => {
+        if (request.readyState == 4) {
+            if ((request.status > 199) & (request.status < 300)) {
+                //console.log(request.responseText)
+                var data = JSON.parse(request.responseText)
+                // data.forEach(element =>console.log(element.name + element.username));
+                var html_data = ""
+                data.forEach(obj => {
+                    html_data += `<tr><td>${obj.name}</td><td>${obj.email}</td></tr>`
+                })
+
+                document.querySelector(".part1").innerHTML = html_data
+            }
+        }
+    }
+
+
+    //request.send()
+
+
+    //ready state=0 no reqst send to  server ,ready 4 - task completed
+    //status 
+    //100-199 informational responses
+    //200-      sucess
+    //300
+
+    // request.onreadystatechange = () => {
+    //     if (request.readyState == 4) {
+    //         if ((request.status > 199) & (request.status < 300)) {
+    //             //console.log(request.responseText)
+    //             var data = JSON.parse(request.responseText)
+    //             // data.forEach(element =>console.log(element.name + element.username));
+    //             var html_data = ""
+    //             data.forEach(obj=>{
+    //                 html_data+=`<tr><td>${obj.name}</td><td>${obj.email}</td></tr>`
+    //             })
+
+    //             document.querySelector(".part1").innerHTML = html_data
+    //             //data.forEach(element =>console.log(element.username));
+                //data.forEach(element =>console.log(element.title));
+
+                //      for(let lst of data){
+                //          if((lst.completed)==true){
+                //             console.log(lst)
+                //          }
+
+
+                //      }
+
+
+                // }
+                // else{
+                //     console.log("fail")
+                // }
+    //         }
+    //     }
+    // }
+</script>
+
+</html>
